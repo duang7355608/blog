@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "Jekyll目录结构"
+date:   2023-12-03 00:00:00 +0800
+categories: jekyll update
+---
+{% include toc.md %}
+
+>  **英文官网** [jekyllrb.com](https://jekyllrb.com/)  
+>  **中文操作指南** [www.jekyll.com.cn](https://www.jekyll.com.cn/docs/#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97)
+
+## 文件夹/文件内容介绍
+
+   - `_posts` 存放文章的文件夹。
+   - `_drafts` 存放草稿的文件夹。
+   - `_includes` 存放可以被其他文件包含的文件夹。
+   - `_layouts` 存放布局文件的文件夹。
+   - `_data` 存放数据文件的文件夹。
+   - `_sites` 存放生成的网站文件的文件夹。
+
+
+   - `_config.yml` 网站的配置信息。
+   - `index.markdown` 网站的主页。
+   - `about.markdown` 关于页面。
+   - `Gemfile` 用于安装jekyll和其他依赖项的文件。
+   - `Gemfile.lock` 用于锁定jekyll和其他依赖项
+   
+   
+[//]: # (   - `contact.md` 联系页面。)
+[//]: # (   - `feed.xml` RSS订阅文件。)
+[//]: # (   - `sitemap.xml` Sitemap文件。)
+[//]: # (   - `robots.txt` 网站的robots文件。)
+[//]: # (   - `CNAME` 自定义域名。)
+   - `README.md` 项目的说明文件。
+   - `LICENSE` 项目的许可文件。
+
+> 注意：如果使用GitHub Pages发布您的网站，您可以使用github-pages的gem代替jekyll在您的Gemfile。在这种情况下，您可能还希望排除Gemfile.lock因为GitHub Pages会忽略该文件。
+
+###  网站的配置信息位于 `_config.yml` 文件中。 
+以下是一些配置选项：
+  - `title` 网站的标题。
+  - `author` 网站的作者。
+  - `description` 网站的描述。
+  - `url` 网站的URL。
+  - `baseurl` 网站的基础URL。
+  - `timezone` 网站的时区。
+  - `markdown` 网站的Markdown处理器。
+  - `kramdown` 网站的Kramdown处理器。
+  - `permalink` 网站的永久链接
+  - `exclude` 网站的排除文件。
+  - `include` 网站的包含文件。
+  - `keep_files` 网站的保留文件。
+  - `encoding` 网站的编码。
+  - `lsi` 网站的LSI。
+  - `safe` 网站的安全。
+  - `show_drafts` 网站的草稿。
+  - `show_future` 网站的未来。
+  - `collections` 网站的集合。
+  - `defaults` 网站的默认值。
+  - `plugins` 网站的插件。
+  - `plugins_dir` 网站的插件目录。
+  - `source` 网站的源。
+  - `destination` 网站的目标。
+  - `strict_front_matter` 网站的严格前导标记。
+  - `strict_variables` 网站的严格变量。
+  - `liquid_options` 网站的Liquid选项。
+  - `theme` 网站的主题。
+  - `exclude_from_localizations` 网站的排除本地化。
+  - `include_in_development` 网站的开发中。
+  - `show_dir_listing` 网站的目录列表。
+
+
