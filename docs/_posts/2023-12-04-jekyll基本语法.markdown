@@ -1,15 +1,16 @@
 ---
-layout: post
+layout: "post"
 title:  "Jekyll基本语法"
-date:   2023-12-04 00:00:00 +0800
-categories: jekyll update
+date:   "2023-12-04 00:00:00 +0800"
+categories: "jekyll update"
 ---
 {% include toc.md %}
 
->  **英文官网** [jekyllrb.com](https://jekyllrb.com/)  
->  **中文操作指南** [www.jekyll.com.cn](https://www.jekyll.com.cn/docs/#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97)
+> **英文官网** [jekyllrb.com](https://jekyllrb.com/)  
+> **中文操作指南** [www.jekyll.com.cn](https://www.jekyll.com.cn/docs/#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97)
 
 ## Front Matter 文件头部元信息
+
 Front Matter 是放置在文件开头的两条三虚线之间的YAML片段。
 
 举例：
@@ -25,14 +26,17 @@ permalink: /2023/12/03/jekyll语法学习/
 ```
 
 ### 使用 front Matter 来设置页面的变量,供其他地方引用
+
 举例：
 
 这样设置
+
 ```
 ---
 my_number: 5
 ---
 ```
+
 这样读取
 
 > \{\{ page.my_number \}\}
@@ -42,31 +46,31 @@ my_number: 5
 ## Liquid 模板语言
 
 * objects 变量引用，主要用来插入显示变量
-* tags    逻辑控制，比如if
+* tags 逻辑控制，比如if
 * filters 过滤器，改变Liquid的值，过滤或调整格式
 
 ### objects
 
-{% raw %}
-对对象使用双花括号
+{% raw %} 对对象使用双花括号
 > {{ xxx }}
 
 例如：显示page.title变量。
+
 ```
 {{ page.title }}
 ```
-{% endraw %}
 
+{% endraw %}
 
 ### tags
-{% raw %}
-使用大括号和百分号作为标签
-> {% xxx  %}
+
+{% raw %} 使用大括号和百分号作为标签
+> {% xxx %}
 
 {% endraw %}
 
-例如：判断page.show_sidebar这个bolean值
-{% raw %}
+例如：判断page.show_sidebar这个bolean值 {% raw %}
+
 ```
 {% if page.show_sidebar %}
   <div class="sidebar">
@@ -74,19 +78,21 @@ my_number: 5
   </div>
 {% endif %}
 ```
+
 {% endraw %}
 
 ### filters
-{% raw %}
-用分隔符|在输出中使用
+
+{% raw %} 用分隔符|在输出中使用
 > xxx \| xxx
 
 例如：将字符串转换为大写
+
 ```
 {{ "hi" | capitalize }}
 ```
-{% endraw %}
 
+{% endraw %}
 
 ## Data Files 数据文件
 
@@ -94,19 +100,21 @@ my_number: 5
 
 ### 数据文件使用
 
-例如：
-YAML是 Ruby 生态系统中常见的一种格式。您将使用它来存储一组导航项，每个导航项都有一个名称和链接。
+例如： YAML是 Ruby 生态系统中常见的一种格式。您将使用它来存储一组导航项，每个导航项都有一个名称和链接。
 
 _data/navigation.yml使用以下内容创建导航数据文件：
+
 ```
 - name: Home
   link: /
 - name: About
   link: /about.html
 ```
+
 Jekyll 在 中向您提供此数据文件site.data.navigation。_includes/navigation.html现在您可以迭代数据文件，而不是输出 中的每个链接：
 
 {% raw %}
+
 ```
 <nav>
   {% for item in site.data.navigation %}
@@ -116,8 +124,8 @@ Jekyll 在 中向您提供此数据文件site.data.navigation。_includes/naviga
   {% endfor %}
 </nav>
 ```
-{% endraw %}
 
+{% endraw %}
 
 ## Blogging 博客相关
 
@@ -146,6 +154,7 @@ Jekyll 在 中向您提供此数据文件site.data.navigation。_includes/naviga
 layout指向的布局文件放在`_layouts`下的`post.html`
 
 {% raw %}
+
 ```html
 ---
 layout: default
@@ -156,14 +165,15 @@ layout: default
 {{ content }}
 
 ```
+
 {% endraw %}
 
-
 ### List posts 帖子目录
+
 在根目录创建`blog.html`，并在导航页添加blog链接进去
 
-/blog.html包含以下内容：
-{% raw %}
+/blog.html包含以下内容： {% raw %}
+
 ```
 ---
 layout: default
@@ -180,6 +190,7 @@ title: Blog
   {% endfor %}
 </ul>
 ```
+
 {% endraw %}
 
 * post.url由Jekyll自动设置为post的输出路径
