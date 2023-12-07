@@ -1,0 +1,130 @@
+---
+layout: "post"
+title:  "Jekyll个性化配置"
+date:   "2023-12-06 00:00:00 +0800"
+categories: [jekyll]
+tags: [jekyll]
+---
+{% include toc.md %}
+
+> **英文官网** [jekyllrb.com](https://jekyllrb.com/)  
+> **中文操作指南** [www.jekyll.com.cn](https://www.jekyll.com.cn/docs/#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97)
+> **jekyllrb配置项文档** [jekyll-Configuration](https://jekyllrb.com/docs/configuration/)
+
+## 个性化设置
+
+---
+
+#### Front Matter值加上引号，兼容IDEA的代码格式化
+
+Front Matter是`YAML`语法,值加上引号也能正常识别，这样能兼容IDEA的代码格式化
+
+
+---
+
+#### markdown目录`[TOC]`设置
+
+jekyll 的kramdown不支持`[TOC]`自动生成目录的方式,格式稍微有些区别。
+
+在站点根目录下`/_includes/`目录下新建一个`toc.md`文件。  
+内容如下
+
+```markdown
+- TOC   
+  {:toc}
+```
+
+在文章正文开头加入一段Liquid模板语言就等于`[TOC]`了 {% raw %}
+
+```
+{% include toc.md %}
+```
+
+{% endraw %}
+
+---
+
+#### 本地运行jekyll服务可选启动参数
+
+在启动命令```bash  bundle exec jekyll serve```后追加参数扩展
+
+
+- 要强制浏览器在每次更改时刷新，加参数`--livereload`  
+  *不包括更改`_config.yml`文件的动作，此时还是需要重启服务器失效*
+- 启动后自动打开首页，加参数`--open_url`
+- 预览包含草稿的文章，加参数`--drafts`
+
+```bash
+  bundle exec jekyll serve --livereload --open_url --drafts
+```
+
+---
+
+## 配置文件相关`_config.yml`
+
+> [Configuration](https://jekyllrb.com/docs/configuration/)  
+> 更改`_config.yml`文件需要重启服务器
+
+### jekyll编译生成网站时区配置
+
+`timezone: Asia/Shanghai`
+
+在githubpages中编译发布后，发现文章标记的时间与本地不一致，所以可以在`_config.yml`中显式的设置时区
+
+### 调整jekyll文章路径规则
+
+> https://jekyllrb.com/docs/permalinks/
+```
+permalink: /:year/:month/:day/:title:output_ext
+
+#默认值 
+#permalink: /:categories/:year/:month/:day/:title:output_ext
+```
+
+- `:year` 按年份存放文章
+- `:month` 按月份存放文章
+- `:day` 按天存放文章
+- `:title` 按标题存放文章
+- `:output_ext` 输出文件扩展名
+
+---
+
+
+---
+
+[//]: # (### 生成页面摘录) 暂时未用
+
+[//]: # (`page_excerpts`设置为 true)
+
+
+---
+
+
+
+
+
+---
+---
+
+## 插件
+> [Plugins](https://jekyllrb.com/docs/plugins/)
+
+
+---
+
+## 主题
+
+> [Themes](https://jekyllrb.com/docs/themes/)
+>
+---
+
+## ？？？
+
+---
+
+## 参考资料
+
+- [jekyll自动生成目录的几种方案](https://plutotree.me/2019-01-30/jekyll-toc-solution.html)
+
+- [Jekyll官网](https://jekyllrb.com/)
+- [Jekyll官网-永久连接](https://jekyllrb.com/docs/permalinks/)

@@ -2,7 +2,9 @@
 layout: "post"
 title:  "Initial GitHub pages site with Jekyll"
 date:   "2023-12-02 00:00:00 +0800"
-categories: "jekyll github github-pages"
+categories: [jekyll]
+tags: [jekyll,github,github-pages]
+
 ---
 {% include toc.md %}
 
@@ -131,7 +133,7 @@ bundle install
   bundle exec jekyll serve
   ```
 
-要强制浏览器在每次更改时刷新，请使用
+要强制浏览器在每次更改时刷新，请使用`--livereload`。
 
   ```bash
   bundle exec jekyll serve --livereload
