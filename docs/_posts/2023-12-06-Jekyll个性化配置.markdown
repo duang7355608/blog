@@ -87,11 +87,6 @@ permalink: /:year/:month/:day/:title:output_ext
 - `:title` 按标题存放文章
 - `:output_ext` 输出文件扩展名
 
----
-
-
----
-
 [//]: # (### 生成页面摘录) 暂时未用
 
 [//]: # (`page_excerpts`设置为 true)
@@ -99,17 +94,12 @@ permalink: /:year/:month/:day/:title:output_ext
 
 ---
 
-
-
-
-
----
----
-
 ## 插件
 > [Plugins](https://jekyllrb.com/docs/plugins/)
 
-https://jekyll.github.io/jekyll-admin/
+###  [jekyll-admin](https://jekyll.github.io/jekyll-admin/)
+
+
 ---
 
 ## 主题
@@ -151,3 +141,5 @@ gem "github-pages", group: :jekyll_plugins
 
 - [Jekyll官网](https://jekyllrb.com/)
 - [Jekyll官网-永久连接](https://jekyllrb.com/docs/permalinks/)
+
+## 最后更新时间：2023-12-08
