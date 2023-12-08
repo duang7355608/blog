@@ -1,5 +1,4 @@
 ---
-layout: "post"
 title:  "Jekyll个性化配置"
 date:   "2023-12-06 00:00:00 +0800"
 categories: [jekyll]
@@ -74,6 +73,7 @@ jekyll 的kramdown不支持`[TOC]`自动生成目录的方式,格式稍微有些
 ### 调整jekyll文章路径规则
 
 > https://jekyllrb.com/docs/permalinks/
+
 ```
 permalink: /:year/:month/:day/:title:output_ext
 
@@ -109,13 +109,36 @@ permalink: /:year/:month/:day/:title:output_ext
 ## 插件
 > [Plugins](https://jekyllrb.com/docs/plugins/)
 
-
+https://jekyll.github.io/jekyll-admin/
 ---
 
 ## 主题
-
 > [Themes](https://jekyllrb.com/docs/themes/)
->
+
+###  github pages 支持主题
+> [github pages 支持主题](https://pages.github.com/themes/)
+
+比如:  https://github.com/pages-themes/hacker#usage
+
+Usage
+To use the Hacker theme:
+
+- Add the following to your site's _config.yml:
+```
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+```
+-   Optionally, if you'd like to preview your site on your computer, add the following to your site's Gemfile:
+```
+gem "github-pages", group: :jekyll_plugins
+```
+
+> 只用配置文件改换主题，其实不行。。  
+> 因为默认minima主题默认包含了很多文件，比如首页home、文章页post的样式。  
+> 直接换成其他主题，这些都找不到了，需要重新配置md文章中layout样式。等等。。
+
+
 ---
 
 ## ？？？

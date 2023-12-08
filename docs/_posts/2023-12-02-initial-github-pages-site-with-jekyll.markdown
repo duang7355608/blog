@@ -1,5 +1,4 @@
 ---
-layout: "post"
 title:  "Initial GitHub pages site with Jekyll"
 date:   "2023-12-02 00:00:00 +0800"
 categories: [jekyll]
