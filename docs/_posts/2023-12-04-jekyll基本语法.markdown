@@ -20,17 +20,20 @@ Front Matter 是放置在文件开头的两条三虚线之间的`YAML`片段。
 layout: post
 title:  "Jekyll语法学习"
 date:   2023-12-03 00:00:00 +0800
-categories: jekyll update
+categories: [jekyll,update]
+tags: [jekyll,update]
 permalink: /2023/12/03/jekyll语法学习/
 ---
 ```
 
-- `:layout` 布局文件
-- `:title` 标题
-- `:date` 日期
-- `:categories` 分类
-- `:tags` 标签
-- `:permalink` 永久链接
+- `layout` 布局文件
+- `title` 标题
+- `date` 时间
+- `categories` 分类
+- `tags` 标签
+- `permalink` 自定义永久链接，覆盖默认链接格式
+- `published:false` 不发布生成，*或者使用草稿方式实现*
+
 
 ### 使用 front Matter 来设置页面的变量,供其他地方引用
 
