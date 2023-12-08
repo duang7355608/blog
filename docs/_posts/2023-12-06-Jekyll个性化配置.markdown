@@ -122,13 +122,23 @@ permalink: /:year/:month/:day/:title:output_ext
 > [Plugins](https://jekyllrb.com/docs/plugins/)
 
 > [github pages 插件列表](https://pages.github.com/versions/)  
-在githubPages部署使用不在列表中的插件时注意在_config.yml中添加为白名单
+！！！在githubPages部署无法使用不在列表中的插件，需要本地生成网站后推送上去。
 
 ### [jekyll-feed](https://github.com/jekyll/jekyll-feed)
 
 > 生成RSS订阅
 
-### [jekyll-admin](https://jekyll.github.io/jekyll-admin/)
+### [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+
+> 自动生成网页的元信息
+
+
+### [jekyll-admin](https://github.com/jekyll/jekyll-admin/)
+
+> 在本地配合使用`bundle exec jekyll serve`一起使用。  
+> 为用户提供传统的CMS风格的图形界面来编写内容和管理Jekyll网站。  
+> 访问地址是：`http://localhost:4000/admin`
+
 
 ### [Jekyll Target Blank](https://github.com/keithmifsud/jekyll-target-blank)
 
@@ -137,11 +147,6 @@ permalink: /:year/:month/:day/:title:output_ext
 ### [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 
 > 生成站点地图
-
-### [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
-
-> 自动生成网页的元信息
-
 
 ---
 

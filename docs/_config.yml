@@ -62,13 +62,13 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
-  - jekyll-target-blank
+#  - jekyll-target-blank
 
 
 
 
 whitelist:
-  - jekyll-target-blank
+#  - jekyll-target-blank
 
 
 
