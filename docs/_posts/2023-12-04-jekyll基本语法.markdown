@@ -23,6 +23,7 @@ date:   2023-12-03 00:00:00 +0800
 categories: [jekyll,update]
 tags: [jekyll,update]
 permalink: /2023/12/03/jekyll语法学习/
+excerpt_separator: <!--more-->
 ---
 ```
 
@@ -33,7 +34,7 @@ permalink: /2023/12/03/jekyll语法学习/
 - `tags` 标签
 - `permalink` 自定义永久链接，覆盖默认链接格式
 - `published:false` 不发布生成，*或者使用草稿方式实现*
-
+- `excerpt_separator` 自定义摘要分隔符，默认是<!--more-->
 
 ### 使用 front Matter 来设置页面的变量,供其他地方引用
 
@@ -49,7 +50,10 @@ my_number: 5
 
 这样读取
 
-> \{\{ page.my_number \}\}
+{% raw %}
+> {{ page.my_number }}
+
+{% endraw %}
 
 ## Liquid 模板语言
 
@@ -69,6 +73,23 @@ my_number: 5
 ```
 
 {% endraw %}
+
+#### 常用变量：
+
+- `site.time` 网站生成的时间
+- `site.pages` 网站中的所有页面
+- `site.posts` 网站中的所有文章
+- `site.related_posts` 与当前文章相关的文章
+- `site.collections` 网站中的所有集合
+- `page.content` 页面的内容
+- `page.title` 页面的标题
+- `page.excerpt` 页面的摘要
+- `page.url` 页面的 URL
+- `page.date` 页面的日期
+- `page.id` 页面的唯一标识符
+- `page.categories` 页面的分类
+- `page.tags` 页面的标签
+- `paginator.page` 当前页码
 
 > #### 可引用的系统默认变量介绍-[**Variables**](https://jekyllrb.com/docs/variables/)
 > - `Global Variables` 全局
