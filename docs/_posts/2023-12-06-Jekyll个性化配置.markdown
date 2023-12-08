@@ -119,8 +119,9 @@ permalink: /:year/:month/:day/:title:output_ext
 
 ## 插件
 
-> [Plugins](https://jekyllrb.com/docs/plugins/)
-
+> [Plugins](https://jekyllrb.com/docs/plugins/)  
+> 注意是否需要在_config.yml中配置白名单
+ 
 > [github pages 插件列表](https://pages.github.com/versions/)  
 ！！！在githubPages部署无法使用不在列表中的插件，需要本地生成网站后推送上去。
 
@@ -142,8 +143,8 @@ permalink: /:year/:month/:day/:title:output_ext
 
 ### [Jekyll Target Blank](https://github.com/keithmifsud/jekyll-target-blank)
 
-> 可以给网站中的链接自动添加target="_blank"，可以避免超链接在当前浏览器去窗口打开的问题。
-
+> 可以给网站中的链接自动添加target="_blank"，可以避免超链接在当前浏览器去窗口打开的问题。  
+> 这个插件在github pages用不了。。用鼠标中键或定制脚本代替吧。。。
 ### [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 
 > 生成站点地图
