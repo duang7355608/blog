@@ -70,6 +70,16 @@ jekyll 的kramdown不支持`[TOC]`自动生成目录的方式,格式稍微有些
 
 在githubpages中编译发布后，发现文章标记的时间与本地不一致，所以可以在`_config.yml`中显式的设置时区
 
+### jekyll生成网页的语言标识
+
+`lang: zh-CN`  
+对应的网页头部
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+```
+
+
 ### 调整jekyll文章路径规则
 
 > https://jekyllrb.com/docs/permalinks/
