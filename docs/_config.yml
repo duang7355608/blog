@@ -99,6 +99,7 @@ show_excerpts: true
 header_pages:
   - about.markdown
   - portfolio.md
+  - index-collections.md
   - index-tags.md
   - index-categories.md
   - index-archive.md
