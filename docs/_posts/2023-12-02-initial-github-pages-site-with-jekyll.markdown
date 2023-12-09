@@ -13,7 +13,7 @@ tags: [jekyll,github,github-pages]
 ## 远程仓库准备
 
 > **普通账户只有公开库才能使用githubPages功能**
->
+
 
 * 或者在github上新创建一个仓库，作为站点发布专用仓库
 

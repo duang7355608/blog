@@ -88,7 +88,10 @@ plugins:
 
 ##################################
 theme: minima
+
 page_excerpts: true
+show_excerpts: true
+#excerpt_separator: <!--more-->
 
 header_pages:
   - about.markdown
