@@ -143,7 +143,17 @@ permalink: /:year/:month/:day/:title:output_ext
 
 ### [jekyll-avatar](https://github.com/jekyll/jekyll-avatar)
 
-> 可以引用github账户的头像
+> 可以引用github平台账号头像
+
+
+### [jekyll-gist](https://github.com/jekyll/jekyll-gist)
+
+> 可以引用github平台的gist代码片段
+
+
+### [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+
+> 用于生成站点地图文件 sitemap.xml,供搜索引擎抓取。方便搜索引擎收纳网站中各个页面的 URL。
 
 
 
@@ -203,6 +213,7 @@ gem "github-pages", group: :jekyll_plugins
 ## 参考资料
 
 - [jekyll自动生成目录的几种方案](https://plutotree.me/2019-01-30/jekyll-toc-solution.html)
+- [GitHub Pages 与 Gitee Pages 上的 Jekyll](https://www.xjtu-blacksmith.cn/essay/jekyll-of-pages)
 
 - [Jekyll官网](https://jekyllrb.com/)
 - [Jekyll官网-永久连接](https://jekyllrb.com/docs/permalinks/)
