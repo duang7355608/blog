@@ -1,10 +1,11 @@
 ---
+layout: "post"
 title:  "Jekyll个性化配置"
 date:   "2023-12-06 00:00:00 +0800"
 categories: [jekyll]
 tags: [jekyll]
 ---
-{% include toc.md %}
+{% include /custom/toc.md %}
 
 > **英文官网** [jekyllrb.com](https://jekyllrb.com/)  
 > **中文操作指南** [www.jekyll.com.cn](https://www.jekyll.com.cn/docs/#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97)
@@ -36,7 +37,7 @@ jekyll 的kramdown不支持`[TOC]`自动生成目录的方式,格式稍微有些
 在文章正文开头加入一段Liquid模板语言就等于`[TOC]`了 {% raw %}
 
 ```
-{% include toc.md %}
+
 ```
 
 {% endraw %}
@@ -184,6 +185,12 @@ gem "github-pages", group: :jekyll_plugins
 
 ---
 
+##  其他
+### [gittalk](https://github.com/gitalk/gitalk)
+>  Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件
+
+
+---
 ## ？？？
 
 ---

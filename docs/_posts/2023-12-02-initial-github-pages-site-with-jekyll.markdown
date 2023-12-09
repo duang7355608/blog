@@ -1,11 +1,12 @@
 ---
+layout: "post"
 title:  "Initial GitHub pages site with Jekyll"
 date:   "2023-12-02 00:00:00 +0800"
 categories: [jekyll]
 tags: [jekyll,github,github-pages]
 
 ---
-{% include toc.md %}
+{% include /custom/toc.md %}
 
 > **官方文档** [ Initial GitHub pages site with Jekyll](https://docs.github.com/zh/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
 
