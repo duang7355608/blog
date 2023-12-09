@@ -4,6 +4,7 @@ title:  "Jekyll个性化配置"
 date:   "2023-12-06 00:00:00 +0800"
 categories: [jekyll]
 tags: [jekyll]
+modified_date:   "2023-12-10 00:00:00 +0800"
 ---
 {% include /custom/toc.md %}
 
@@ -34,10 +35,12 @@ jekyll 的kramdown不支持`[TOC]`自动生成目录的方式,格式稍微有些
   {:toc}
 ```
 
-在文章正文开头加入一段Liquid模板语言就等于`[TOC]`了 {% raw %}
+在文章正文开头加入一段Liquid模板语言引入这个文件
+
+{% raw %}
 
 ```
-
+{% include toc.md %}
 ```
 
 {% endraw %}
@@ -122,7 +125,7 @@ permalink: /:year/:month/:day/:title:output_ext
 
 > [Plugins](https://jekyllrb.com/docs/plugins/)  
 > 注意是否需要在_config.yml中配置白名单
- 
+
 > [github pages 插件列表](https://pages.github.com/versions/)  
 ！！！在githubPages部署无法使用不在列表中的插件，需要本地生成网站后推送上去。
 
@@ -134,7 +137,6 @@ permalink: /:year/:month/:day/:title:output_ext
 
 > 自动生成网页的元信息
 
-
 ### [jekyll-admin](https://github.com/jekyll/jekyll-admin/)
 
 > 在本地配合使用`bundle exec jekyll serve`一起使用。  
@@ -145,25 +147,26 @@ permalink: /:year/:month/:day/:title:output_ext
 
 > 可以引用github平台账号头像
 
-
 ### [jekyll-gist](https://github.com/jekyll/jekyll-gist)
 
 > 可以引用github平台的gist代码片段
-
 
 ### [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 
 > 用于生成站点地图文件 sitemap.xml,供搜索引擎抓取。方便搜索引擎收纳网站中各个页面的 URL。
 
+---
+*下面的是githubpages默认不支持的*
 
+### [jekyll-archives](https://github.com/jekyll/jekyll-archives)
+
+> 按dates, tags, categories自动生成文章档案。
 
 ### [Jekyll Target Blank](https://github.com/keithmifsud/jekyll-target-blank)
 
 > 可以给网站中的链接自动添加target="_blank"，可以避免超链接在当前浏览器去窗口打开的问题。  
-> 这个插件在github pages用不了。。用鼠标中键或定制脚本代替吧。。。
-### [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+> 这个插件不在github pages依赖列表中，直接引入用不了。。用鼠标中键或定制脚本代替吧。。。
 
-> 生成站点地图
 
 ---
 
@@ -200,12 +203,15 @@ gem "github-pages", group: :jekyll_plugins
 
 ---
 
-##  其他
+## 其他
+
 ### [gittalk](https://github.com/gitalk/gitalk)
->  Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件
+
+> Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件
 
 
 ---
+
 ## ？？？
 
 ---
@@ -218,4 +224,3 @@ gem "github-pages", group: :jekyll_plugins
 - [Jekyll官网](https://jekyllrb.com/)
 - [Jekyll官网-永久连接](https://jekyllrb.com/docs/permalinks/)
 
-## 最后更新时间：2023-12-08

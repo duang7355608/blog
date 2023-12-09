@@ -59,6 +59,7 @@ defaults:
       layout: "custom_home"
 home: custom_home
 
+
 ##################################
 plugins:
   - jekyll-feed
@@ -66,15 +67,15 @@ plugins:
   - jekyll-remote-theme
   - jekyll-avatar
   - jekyll-sitemap
-
 #  - jekyll-target-blank
-
-
-
 
 #whitelist:
 #  - jekyll-target-blank
 
+
+
+##################################
+h
 
 
 
@@ -96,6 +97,10 @@ show_excerpts: true
 header_pages:
   - about.markdown
   - portfolio.md
+  - index-tags.md
+  - index-categories.md
+  - index-archive.md
+  - index-links.md
 
 
 minima:

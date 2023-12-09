@@ -11,7 +11,7 @@ layout: base
         {{ page.date | date: date_format }}
       </time>
       {%- if page.modified_date -%}
-        ~ 
+        |
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
           {{ mdate | date: date_format }}
@@ -24,6 +24,9 @@ layout: base
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}</p>
+    <p>     {{ page.tags }}    </p>
+    <p>     {{ page.categories }}    </p>
+    <p>     {{ page.collection }}    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
