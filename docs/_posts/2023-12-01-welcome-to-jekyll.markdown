@@ -4,6 +4,10 @@ date:   "2023-12-01 00:00:00 +0800"
 categories: [jekyll]
 tags: [jekyll]
 ---
+
+## 使用了collections功能，指定了collections_dir: my_collections，所以文件夹_post/_drafts无效了。
+
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You
 can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web
 server and auto-regenerates your site when a file is updated.
@@ -34,3 +38,4 @@ requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can 
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 
 [jekyll-talk]: https://talk.jekyllrb.com/
+

@@ -41,23 +41,25 @@ author:
 timezone: Asia/Shanghai
 
 ##################################
+collections_dir: my_collections
 collections:
-  #  posts:
-  #    output: true
-  #    permalink: /:title
-  博客:
+  tech:
     output: true
-  git相关:
+    sort_by: date
+  life:
     output: true
+    sort_by: date
+  media:
+    output: true
+    sort_by: date
+  book:
+    output: true
+    sort_by: date
+  other:
+    output: true
+    sort_by: date
 
 ##################################
-defaults:
-  - scope:
-      path: ""
-      type: "custom_home"
-    values:
-      layout: "custom_home"
-home: custom_home
 
 
 ##################################
@@ -75,7 +77,7 @@ plugins:
 
 
 ##################################
-h
+
 
 
 
