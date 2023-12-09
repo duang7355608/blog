@@ -65,6 +65,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
   - jekyll-avatar
+  - jekyll-sitemap
 
 #  - jekyll-target-blank
 
