@@ -141,6 +141,11 @@ permalink: /:year/:month/:day/:title:output_ext
 > 为用户提供传统的CMS风格的图形界面来编写内容和管理Jekyll网站。  
 > 访问地址是：`http://localhost:4000/admin`
 
+### [jekyll-avatar](https://github.com/jekyll/jekyll-avatar)
+
+> 可以引用github账户的头像
+
+
 
 ### [Jekyll Target Blank](https://github.com/keithmifsud/jekyll-target-blank)
 
