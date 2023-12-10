@@ -13,7 +13,7 @@ layout: base
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
-    {% assign posts = site.documents | reverse  %}
+    {% assign posts = site.documents | reverse | where_exp: "post", "post.layout != 'collection-home'" %}
   {% endif %}
 
 
