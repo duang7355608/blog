@@ -8,9 +8,9 @@ tags: [jekyll]
 {% include /custom/toc.md %}
 
 > **Jekyll官网** [jekyllrb.com](https://jekyllrb.com/)  
-> **中文操作指南** [www.jekyll.com.cn](https://www.jekyll.com.cn/docs/#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97)
 
 ## 文件夹/文件内容介绍
+> [jekyll-Directory Structure](https://jekyllrb.com/docs/structure/)
 
 - `_posts` 存放文章的文件夹。
 - `_drafts` 存放草稿的文件夹。
@@ -42,6 +42,7 @@ tags: [jekyll]
 > 注意：如果使用GitHub Pages发布您的网站，您可以使用github-pages的gem代替jekyll在您的Gemfile。在这种情况下，您可能还希望排除Gemfile.lock因为GitHub Pages会忽略该文件。
 
 ### 网站的配置信息位于 `_config.yml` 文件中。
+> [jekyll-Default Configuration](https://jekyllrb.com/docs/configuration/default/)
 
 以下是一些配置选项：
 
@@ -56,24 +57,12 @@ tags: [jekyll]
 - `permalink` 网站的永久链接
 - `exclude` 网站的排除文件。
 - `include` 网站的包含文件。
-- `keep_files` 网站的保留文件。
 - `encoding` 网站的编码。
-- `lsi` 网站的LSI。
-- `safe` 网站的安全。
-- `show_drafts` 网站的草稿。
-- `show_future` 网站的未来。
-- `collections` 网站的集合。
-- `defaults` 网站的默认值。
+- `safe` 安全模式-启用外部插件时要加白名单。
+- `show_drafts` 网站的草稿文章是否展示。
 - `plugins` 网站的插件。
 - `plugins_dir` 网站的插件目录。
-- `source` 网站的源。
-- `destination` 网站的目标。
-- `strict_front_matter` 网站的严格前导标记。
-- `strict_variables` 网站的严格变量。
-- `liquid_options` 网站的Liquid选项。
+- `source` 网站的源文件目录。
+- `destination` 网站的生成文件目录。
 - `theme` 网站的主题。
-- `exclude_from_localizations` 网站的排除本地化。
-- `include_in_development` 网站的开发中。
-- `show_dir_listing` 网站的目录列表。
-
 ---
