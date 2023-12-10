@@ -7,9 +7,10 @@ tags: [jekyll]
 ---
 {% include /custom/toc.md %}
 
-> **Jekyll官网** [jekyllrb.com](https://jekyllrb.com/)  
+> **Jekyll官网** [jekyllrb.com](https://jekyllrb.com/)
 
 ## 文件夹/文件内容介绍
+
 > [jekyll-Directory Structure](https://jekyllrb.com/docs/structure/)
 
 - `_posts` 存放文章的文件夹。
@@ -42,6 +43,7 @@ tags: [jekyll]
 > 注意：如果使用GitHub Pages发布您的网站，您可以使用github-pages的gem代替jekyll在您的Gemfile。在这种情况下，您可能还希望排除Gemfile.lock因为GitHub Pages会忽略该文件。
 
 ### 网站的配置信息位于 `_config.yml` 文件中。
+
 > [jekyll-Default Configuration](https://jekyllrb.com/docs/configuration/default/)
 
 以下是一些配置选项：
@@ -65,4 +67,5 @@ tags: [jekyll]
 - `source` 网站的源文件目录。
 - `destination` 网站的生成文件目录。
 - `theme` 网站的主题。
+
 ---
