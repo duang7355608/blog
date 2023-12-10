@@ -14,7 +14,6 @@ tags: [jekyll,github,github-pages]
 
 > **普通账户只有公开库才能使用githubPages功能**
 
-
 * 或者在github上新创建一个仓库，作为站点发布专用仓库
 
 * 或者在原有仓库上新建一个空内容分支作为站点发布专用分支，比如：gh-pages
