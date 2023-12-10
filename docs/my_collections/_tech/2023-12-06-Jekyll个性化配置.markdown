@@ -8,9 +8,10 @@ modified_date:   "2023-12-10 00:00:00 +0800"
 ---
 {% include /custom/toc.md %}
 
-> **英文官网** [jekyllrb.com](https://jekyllrb.com/)  
-> **中文操作指南** [www.jekyll.com.cn](https://www.jekyll.com.cn/docs/#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97)
-> **jekyllrb配置项文档** [jekyll-Configuration](https://jekyllrb.com/docs/configuration/)
+> **英文官网** [jekyllrb.com](https://jekyllrb.com/)
+> [jekyll-Collections](https://jekyllrb.com/docs/collections/)  
+> [jekyll-Configuration](https://jekyllrb.com/docs/configuration/)  
+> [jekyll-Variables](https://jekyllrb.com/docs/variables/)
 
 ## 个性化设置
 
@@ -115,17 +116,20 @@ permalink: /:year/:month/:day/:title:output_ext
 - `:output_ext` 输出文件扩展名
 
 ### 生成页面摘录
+
 在_config.yml中设置，开启摘录生成功能。
+
 ```yaml
-page_excerpts: true  
+page_excerpts: true
 show_excerpts: true
 ```
+
 可以在列表页一些地方去引入`{{post.excerpt}}`预览显示文章摘录。  
 默认摘录分隔符是`\n\n`。相当于用文章第一段生成摘录；也可以自定义设置为常见的`<!--more-->`,然后在文章中适当位置加入`<!--more-->`来分隔摘录和正文。
+
 ```yaml
 excerpt_separator: <!--more-->
 ```
-
 
 [//]: # (`page_excerpts`设置为 true)
 
@@ -178,6 +182,10 @@ excerpt_separator: <!--more-->
 > 可以给网站中的链接自动添加target="_blank"，可以避免超链接在当前浏览器去窗口打开的问题。  
 > 这个插件不在github pages依赖列表中，直接引入用不了。。用鼠标中键或定制脚本代替吧。。。
 
+### [gittalk](https://github.com/gitalk/gitalk)
+
+> Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件
+
 
 ---
 
@@ -209,21 +217,12 @@ gem "github-pages", group: :jekyll_plugins
 
 > 只用配置文件改换主题，其实不行。。  
 > 因为默认minima主题默认包含了很多文件，比如首页home、文章页post的样式。  
-> 直接换成其他主题，这些都找不到了，需要重新配置md文章中layout样式。等等。。
+> 直接换成其他主题，这些都找不到了，需要重新编写layou文件和配置md文章中layout样式。等等。。
 
 
 ---
 
 ## 其他
-
-### [gittalk](https://github.com/gitalk/gitalk)
-
-> Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件
-
-
----
-
-## ？？？
 
 ---
 
@@ -231,7 +230,6 @@ gem "github-pages", group: :jekyll_plugins
 
 - [jekyll自动生成目录的几种方案](https://plutotree.me/2019-01-30/jekyll-toc-solution.html)
 - [GitHub Pages 与 Gitee Pages 上的 Jekyll](https://www.xjtu-blacksmith.cn/essay/jekyll-of-pages)
-
 - [Jekyll官网](https://jekyllrb.com/)
-- [Jekyll官网-永久连接](https://jekyllrb.com/docs/permalinks/)
+- [Jekyll-Permalinks](https://jekyllrb.com/docs/permalinks/)
 

@@ -7,7 +7,7 @@ tags: [jekyll]
 ---
 {% include /custom/toc.md %}
 
-> **英文官网** [jekyllrb.com](https://jekyllrb.com/)  
+> **Jekyll官网** [jekyllrb.com](https://jekyllrb.com/)  
 > **中文操作指南** [www.jekyll.com.cn](https://www.jekyll.com.cn/docs/#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97)
 
 ## 文件夹/文件内容介绍
