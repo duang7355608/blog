@@ -5,25 +5,31 @@ permalink: "/tags/"
 ---
 <!--md-->
 <div>
-    {% for staff_member in site.staff_members %}
-        <h2>
-            <a href="{{ staff_member.url }}">
-                {{ staff_member.name }} - {{ staff_member.position }}
-            </a>
-        </h2>
-        <p>{{ staff_member.content | markdownify }}</p>
-    {% endfor %}
+{% assign all_tags = "" | split: "" %}
+
+{% for post in site.documents %}
+
+{% assign post_tags = post.tags %}
+
+{% assign all_tags = all_tags | concat: post_tags | uniq %}
+
+{% endfor %}
 </div>
 
 <div>
-    {% for tag in site.tags %}
-        <h3>{{ tag[0] }}</h3>
-        <ul>
-            {% for post in tag[1] %}
-                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-    {% endfor %}
+{% for tag in all_tags %}
+    <h3>{{ tag | escape }}
+        <a hidden="hidden" href="{{ site.baseurl }}/{{ tag | escape }}/">
+            {{ tag | escape }}
+        </a>
+    </h3>
+    {% for post in site.documents %}
+        {% if post.tags contains tag %}
+            <ul>
+               <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            </ul>
+        {% endif %}
+    {% endfor %}    
+{% endfor %}
 </div>
-
 <!--md-->
