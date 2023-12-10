@@ -86,8 +86,55 @@ categories，在Front Matter中可以给一篇文章标记多个category，除�
   目录下。
 - 每个目录可以设置各种不同的layout或其他Front Matter元数据。
 - 启用自定义collections后，带来的问题是`site.tags` 和 `site.categories`作用被大幅削弱。
+- collection索引页制作： {% raw %}
 
-> 说实话，我刚搭好这套系统，还没什么内容，在分类自定义方面，还没体会到多个collections带来的便利，带来的复杂和坑倒是有很多。。
+```html
+---
+layout: "page"
+title: "Collections"
+permalink: "/collections/"
+---
+<!--md-->
+
+<div>
+    {% for collection in site.collections %}
+    <h2>
+        <a href="{{ site.baseurl }}/{{ collection.label | escape }}/">
+            {{ collection.label | escape }}
+        </a>
+    </h2>
+    {% endfor %}
+</div>
+<!--md-->
+```
+
+{% endraw %}
+
+- 单个collection专属的home页制作：
+  - 做一个新的layout文件,样式同home页，只是内容范围限定为当前collection目录下的文章。复制一份`_layouts\home.html`命名为collection-home.html，简单调整以下内容： {% raw %}
+    - 调整前
+      ```html
+        <h1 class="page-heading">{{ page.title }}</h1>
+  
+        {% assign posts = site.posts %}
+       ```
+
+    - 调整后
+        ```html
+        <h1 class="page-heading">{{ page.collection }}</h1>
+  
+        {% assign posts = site[page.collection] | reverse | where_exp: "post", "post.layout != 'collection-home'" %}
+        ```
+  - 然后在自定义的collection目录下新建一个index.md文件，访问路径为`site.baseurl/collection名字/`。  
+  内容如下：  
+    ```html
+        ---
+        layout: "collection-home"
+        ---
+    ```
+{% endraw %}
+
+> 额，我刚搭好这套系统，还没什么内容，在分类自定义方面，还没体会到多个collections带来的便利，带来的复杂和坑倒是有很多。。
 > 是不是直接默认`_post`下建子目录分类的方案就够用。。。
 
 #### 一些改造解决方案
@@ -154,6 +201,7 @@ permalink: "/categories/"
 </div>
 <!--md-->
 ```
+
 {% endraw %}
 
 ---
