@@ -114,7 +114,18 @@ permalink: /:year/:month/:day/:title:output_ext
 - `:title` 按标题存放文章
 - `:output_ext` 输出文件扩展名
 
-[//]: # (### 生成页面摘录) 暂时未用
+### 生成页面摘录
+在_config.yml中设置，开启摘录生成功能。
+```yaml
+page_excerpts: true  
+show_excerpts: true
+```
+可以在列表页一些地方去引入`{{post.excerpt}}`预览显示文章摘录。  
+默认摘录分隔符是`\n\n`。相当于用文章第一段生成摘录；也可以自定义设置为常见的`<!--more-->`,然后在文章中适当位置加入`<!--more-->`来分隔摘录和正文。
+```yaml
+excerpt_separator: <!--more-->
+```
+
 
 [//]: # (`page_excerpts`设置为 true)
 
