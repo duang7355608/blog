@@ -9,19 +9,24 @@ tags: [rss]
 
 # RSS服务
 ## FreshRSS
-[FreshRSS开源项目](https://github.com/FreshRSS)
+- <https://github.com/FreshRSS>
 
 # 订阅源
-## [微信公众号转RSS](https://wechat2rss.xlab.app/posts/list/)
-> 安全+技术主题为主
+## 微信公众号转RSS
+- 安全/技术相关为主
+  <https://wechat2rss.xlab.app/posts/list/>
+
  
 ## RSSHub
-https://github.com/DIYgod/RSSHub
+- <https://github.com/DIYgod/RSSHub>
 
-[RSSHub开源项目](https://github.com/DIYgod/RSSHub)
-(docs.rsshub.app)
+- 官网/文档 <https://docs.rsshub.app>
+
 ### RSSHub订阅服务
-(https://uneasy.win/rsshubserver/)
+> RSSHub官方站 好像被和谐或不稳定，换其他人的共享站点比较好。
+
+- 网友共享站点
+<https://uneasy.win/rsshubserver/>
 
 # 阅读器
 简单看了一圈，直接用了FreshRSS自带后台的Web页面，目前够用了。
@@ -36,7 +41,7 @@ docker run -d --restart unless-stopped --log-opt max-size=10m -p 8083:80 -e TZ=A
 ```
 ---
 
-RSSHub官方站 docs.rsshub.app 好像和谐或者不稳定，换其他人的共享站点比较好。
+
 
 ---
 
