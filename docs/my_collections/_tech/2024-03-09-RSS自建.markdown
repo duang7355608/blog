@@ -19,9 +19,9 @@ tags: [rss]
 https://github.com/DIYgod/RSSHub
 
 [RSSHub开源项目](https://github.com/DIYgod/RSSHub)
-[RSSHub文档/官网](docs.rsshub.app)
+(docs.rsshub.app)
 ### RSSHub订阅服务
-[RSSHub订阅服务](https://uneasy.win/rsshubserver/)
+(https://uneasy.win/rsshubserver/)
 
 # 阅读器
 简单看了一圈，直接用了FreshRSS自带后台的Web页面，目前够用了。
