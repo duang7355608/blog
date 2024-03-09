@@ -1,0 +1,44 @@
+---
+layout: "post"
+title:  "RSS自建"
+date:   "2023-12-05 00:00:00 +0800"
+categories: [rss]
+tags: [rss]
+---
+{% include /custom/toc.md %}
+
+# RSS服务
+## FreshRSS
+> https://github.com/FreshRSS
+
+# 订阅源
+## https://wechat2rss.xlab.app/posts/list/
+## RSSHub
+> https://github.com/DIYgod/RSSHub
+### RSSHub订阅服务
+> https://uneasy.win/rsshubserver/
+
+# 阅读器
+## 简单看了一圈，直接用了FreshRSS自带后台的Web页面，目前够用了。
+
+
+---
+FreshRSS搭建，
+在CMD中 执行这个。用powershell执行好像有点问题。
+
+```bash 
+docker run -d --restart unless-stopped --log-opt max-size=10m -p 8083:80 -e TZ=Asia/Shanghai -e CRON_MIN="1,31" -v freshrss_data:/var/www/FreshRSS/data -v freshrss_extensions:/var/www/FreshRSS/extensions freshrss/freshrss
+```
+---
+
+RSSHub官方站 docs.rsshub.app 好像和谐或者不稳定，换其他人的共享站点比较好。
+
+---
+
+
+---
+
+## 扩展阅读
+
+- RSS折腾: https://linux.do/t/topic/15122
+
