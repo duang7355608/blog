@@ -9,15 +9,19 @@ tags: [rss]
 
 # RSS服务
 ## FreshRSS
-> https://github.com/FreshRSS
+[FreshRSS开源项目](https://github.com/FreshRSS)
 
 # 订阅源
-## https://wechat2rss.xlab.app/posts/list/
+## [微信公众号转RSS](https://wechat2rss.xlab.app/posts/list/)
+> 安全+技术主题为主
+ 
 ## RSSHub
-> https://github.com/DIYgod/RSSHub
+https://github.com/DIYgod/RSSHub
 
+[RSSHub开源项目](https://github.com/DIYgod/RSSHub)
+[RSSHub文档/官网](docs.rsshub.app)
 ### RSSHub订阅服务
-> https://uneasy.win/rsshubserver/
+[RSSHub订阅服务](https://uneasy.win/rsshubserver/)
 
 # 阅读器
 简单看了一圈，直接用了FreshRSS自带后台的Web页面，目前够用了。
@@ -38,7 +42,6 @@ RSSHub官方站 docs.rsshub.app 好像和谐或者不稳定，换其他人的共
 
 
 
-## 扩展阅读
+# 扩展阅读
 
-- RSS折腾: https://linux.do/t/topic/15122
-
+- [RSS折腾笔记](https://linux.do/t/topic/15122)
